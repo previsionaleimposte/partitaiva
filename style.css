@@ -1,0 +1,151 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: #2c2c2c;
+}
+
+@font-face {
+  font-family: "Gaisyr Regular";
+  src: local("Gaisyr-Regular") format("otf");
+  src: local("Gaisyr-Regular") format("woff");
+}
+
+
+.home {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 95vh;
+}
+
+.home-first {
+  width: 35%;
+  height: 100%;
+  padding: 2.5vh;
+}
+.home-second {
+  width: 65%;
+  height: 100%;
+}
+
+.division-line {
+  border-left: 2px solid black;
+  border-bottom: 0px solid black;
+}
+
+.division-line-2 {
+  border-left: 0px solid black;
+  border-bottom: 0px solid black;
+}
+
+canvas {
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+/* ------ BOX -----*/
+/* box common settings */
+.box-background {
+  background-color: #efeee9;
+}
+
+.margin-box-w {
+  margin-left: 2.5vw;
+  margin-right: 2.5vw
+}
+.margin-box-h {
+  margin-top: 2.5vh;
+  margin-bottom: 2.5vh;
+}
+.padding-box {
+  padding: 5vh;
+}
+
+.border-box {
+  border-radius: 25px;
+}
+.stroke-box {
+  border: 2px solid black;
+}
+
+/* box flex */
+.flex-row {
+  display: flex;
+}
+
+/* box variables*/
+.full-height {
+  height: 90vh;
+}
+
+@media screen and (max-width: 600px) {
+  .home {
+    flex-direction: column-reverse;
+  }
+
+  canvas {
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 0px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 0px;
+  }
+
+  .division-line {
+    border-left: 0px solid black;
+    border-bottom: 0px solid black;
+  }
+  .division-line-2 {
+    border-left: 0px solid black;
+    border-top: 2px solid black;
+  }
+
+  .home-first {
+    width: 100%;
+    height: 40%;
+  }
+  .home-second {
+    width: 100%;
+    height: 60%;
+  }
+
+}
+
+
+
+
+
+/* ------ TEXT -----*/
+/* text settings*/
+h1 {
+  font-size: 5vh;
+  font-family: "Gaisyr-Regular"
+}
+
+h3 {
+  font-size: 2vh;
+}
+
+.text-black {
+  text-align: left;
+  color: #2c2c2c;
+}
+
+.text-white {
+  text-align: left;
+  color: #efeee9;
+}
+
+
+
+/* main box styles */
+.main-img {
+  border-left: 2px solid black;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+
+.main-txt {
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+}
