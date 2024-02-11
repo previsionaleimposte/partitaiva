@@ -360,13 +360,31 @@ nav li a {
   }
 
   #titolo h1 {
-    font-size: 50px;
+    font-size: 100px;
     line-height: 1.1;
   }
 
   h1 {
-    font-size: 30px;
+    font-size: 60px;
     line-height: auto;
+  }
+
+  h2 {
+    font-size: 40px;
+    line-height: auto;
+  }
+
+  p, nav li a {
+    font-size: 36px;
+}
+
+  #emmail {
+    font-size: 36px;
+  }
+
+  .badge {
+    padding: 12px 24px;
+    font-size: 30px;
   }
 
   .tool-row {
