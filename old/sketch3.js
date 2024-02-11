@@ -51,8 +51,7 @@ let myHeight;
 let noTileValX = 0;
 let noTileValY = 0;
 let arrowSize = 500;
-//percentuale di canvas occupata dalla freccia
-let arrowProportion = 0.4;
+let arrowProportion = 0.5;
 let mosaicUpdateCycles;
 let arrowRotationUpdateCycles;
 
@@ -63,7 +62,7 @@ function preload() {
 
 function setup() {
 
-  canvasDiv = document.getElementById('cruciverbaInterattivo');
+  canvasDiv = document.getElementById('cruciverba');
   myWidth = canvasDiv.offsetWidth;
   myHeight = canvasDiv.offsetHeight;
 
@@ -72,7 +71,7 @@ function setup() {
 
   //settings
   let cnv = createCanvas(myWidth, myHeight);
-  cnv.parent("cruciverbaInterattivo");
+  cnv.parent("cruciverba");
 
   resetSketch();
 }

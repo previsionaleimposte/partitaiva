@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+    <link href="style.css" rel="stylesheet" type="text/css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/addons/p5.sound.min.js"></script>
+
+  </head>
+
+  <body>
+
+    <!-- <nav class="navbar fixed-top navbar-light bg-transparent">
+      <div class="container-fluid">
+        <div class="navigazione">
+        <a href="#">Valore</a>
+        <a href="#">Pianicazione</a>
+      </div>
+        <button type="button" style="padding: 18px"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M120-160v-640l760 320-760 320Zm80-120 474-200-474-200v140l240 60-240 60v140Zm0 0v-400 400Z"/></svg></button>
+      </div>
+    </nav> -->
+
+    <div id="home" class="cont" style="margin-bottom: 36px">
+      <div id="titolo" class="block bg-one" style="margin: 0">
+        <h1>Partita IVA?</h1>
+        <h1>Le imposte non sono più un rebus</h1>
+      </div>
+
+      <div id="cruciverba" class="bg-one">
+        <script src="sketch3.js"></script>
+      </div>
+
+    </div>
+
+    <div class="block bg-one">
+      <h1>Il Previsionale d’Imposte consente di <span>pianificare</span> strategicamente <span>il pagamento delle imposte</span>, sed do eiusmod tempor incididunt ut labore.</h1>
+    </div>
+
+    <div id="about" class="cont">
+
+      <div class="bg-transparent">
+        <h2>il valore</h2>
+        <h1>Calcola in anticipo le tasse che dovrai versare e pianifica l’accantonamento per arrivare preparato/a in dichiarazione dei redditi.</h1>
+      </div>
+
+      <!-- <div id="intro" class="b-coloured">
+
+        <h1>(domande)</h1>
+      </div> -->
+
+                <div class="accordion accordion-flush" id="accordionFlushExample">
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingOne">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                A chi è rivolto il servizio?
+              </button>
+            </h2>
+            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">Il servizio è rivolto ai professionisti e alle ditte individuali con Partita IVA (forfettari e semplificati). Il previsionale prevede anche una sezione per coloro che svolgono lavoro dipendente e hanno contemporaneamente la Partita IVA.</div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                A cosa serve?
+              </button>
+            </h2>
+            <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">Il servizio consente di definire in anticipo l’ammontare delle imposte e dei contributi da versare in dichiarazione dei redditi. In questo modo è possibile pianificare l’importo delle tasse da accantonare e come suddividere le spese mensili.</div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingFour">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                Cosa cambia dai tool gratis?
+              </button>
+            </h2>
+            <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">Le principali differenze con i tool gratis presenti su internet sono:
+                <ol>
+                  <li>Con i tool gratis devi sapere cosa inserire in ogni sezione mentre con previsionale imposte sarà il consulente ad indicarti i dati necessari e ad inserire gli importi. Per chi non si occupa di questa materia non è immediato sapere cosa sia un costo deducibile, o un costo detraibile, oppure quale percentuale forfettaria corrisponda al proprio codice ateco. Quindi spesso si rende necessario l’aiuto di un consulente che svolge giornalmente questo lavoro e ne conosce le caratteristiche.</li>
+                  <li>I tool gratis non tengono in considerazione gli acconti Irpef e Inps che incidono notevolmente sul calcolo, soprattutto il primo anno di partita iva. La conseguenza principale è che l’importo da versare risulta il doppio rispetto a quello calcolato con i tool gratuiti.</li>
+                  <li>I tool gratuiti non considerano i contributi dovuti per le casse previdenziali private (ENPAM, INARCASSA, ENPAP, etc.) e gli importi dei contributi minimi da versare periodicamente. </li>
+                  <li>I tool gratuiti non prevedono l’inserimento di più codici ateco. Questo può risultare sconveniente per i forfettari che svolgono due o più attività con delle percentuali forfettarie differenti. </li>
+                  <li>I tool gratuiti non indicano le scadenze di versamento, rendendo complicata la suddivisione degli importi per l’accantonamento.</li>
+                  <li>I tool gratuiti non fanno distinzione tra fatturato e ricavi incassati, generando degli errori di calcolo rilevanti per i forfettari e i professionisti che tassano solo quanto incassato.</li>
+                </ol>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingFive">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                 In cosa consiste e come si svolge il servizio?
+              </button>
+            </h2>
+            <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">Il servizio è totalmente online e si svolge nel seguente modo:
+                <ol>
+                  <li>Compilazione dati, scelta e prenotazione data appuntamento.</li>
+                  <li>Ricevimento mail con istruzioni per appuntamento.</li>
+                  <li>Appuntamento con un consulente e calcolo live delle tasse</li>
+                  <li>E se non voglio/non ho tempo per l’appuntamento? Nella mail sono presenti le istruzioni per individuare i dati necessari utili per il calcolo delle tasse. Questi possono essere inviati per mail/whatsapp al consulente che nel giro di qualche giorno invierà al cliente il previsionale imposte completo.</li>
+                </ol>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                Se ho la partita iva presso un altro commercialista?
+              </button>
+            </h2>
+            <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">Previsionale imposte non prevede alcun abbonamento e consiste in un servizio totalmente online e indipendente dal proprio studio di commercialista. Il servizio nasce con l’intendo di calcolare in anticipo le tasse ma non sostituisce l’invio della dichiarazione dei redditi e il pagamento delle tasse che ne scaturiscono.</div>
+            </div>
+          </div>
+
+          </div>
+
+    </div>
+
+    <div id="calltoaction" class="block bg-one cont">
+      <h1>Risolvi il tuo rebus!<br>Prenota un appuntamento con un consulente.</h1>
+      <button class="common-button" button onclick="location.href='mailto:previsionaleimposte@gmail.com';"><span>Contattaci!</span><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M647-440H160v-80h487L423-744l57-56 320 320-320 320-57-56 224-224Z"/></svg></button>
+    </div>
+
+    <div id="footer" class="bg-transparent" style="margin-bottom: 0">
+        <p>via Enzo Ferrari 19, Rudiano (BS) 25030 P. IVA 04219220987</p>
+        <p>previsionaleimposte@gmail.com</p>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+
+  </body>
+</html>
